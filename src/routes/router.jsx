@@ -5,6 +5,10 @@ import Shop from '../pages/Products-Shop/Shop';
 import Login from '../pages/Login/Login';
 import Register from '../pages/Register/Register';
 import Home from '../pages/Home/Home';
+import Category from '../pages/Category/Category';
+import About from '../pages/About/About';
+import Contact from '../pages/Contact/Contact';
+import Cart from '../pages/Cart/Cart';
 
 const router = createBrowserRouter([
     {
@@ -16,8 +20,24 @@ const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: '/products',
+                path: '/shop',
                 element: <Shop />
+            },
+            {
+                path: '/cart',
+                element: <Cart />
+            },
+            {
+                path: '/category',
+                element: <Category />
+            },
+            {
+                path: '/about',
+                element: <About />
+            },
+            {
+                path: '/contact',
+                element: <Contact />
             },
             {
                 path: '/login',
