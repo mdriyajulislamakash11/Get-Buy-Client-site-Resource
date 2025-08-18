@@ -27,7 +27,7 @@ const Navber = () => {
 
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar fixed top-0 z-50 max-w-screen-2xl text-white bg-black bg-opacity-40 shadow-md">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -61,7 +61,7 @@ const Navber = () => {
           <ul className="menu menu-horizontal px-1">{navOptions}</ul>
         </div>
         <div className="navbar-end">
-          <Link to="/login" className="btn">
+          <Link to="/login" className="btn  btn-outline">
             Login
           </Link>
         </div>
