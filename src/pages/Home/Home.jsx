@@ -2,6 +2,7 @@ import Banner from "../../components/Banner";
 import PickNShop from "../PickN-Shop/PickNShop";
 import PopularCategory from "../popular-Category/PopularCategory";
 import PopularProduct from "../Popular-Product/PopularProduct";
+import ShoudTry from "../ShoudTry/ShoudTry";
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
             <PopularCategory />
             <PickNShop />
             <PopularProduct />
+            <ShoudTry />
         </div>
     );
 };
