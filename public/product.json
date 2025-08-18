@@ -1,0 +1,1210 @@
+[
+  {
+    "_id": "642c155b2c4774f05c36eeaa",
+    "name": "Smartphone",
+    "description": "Latest 5G smartphone with high resolution display",
+    "image": "https://example.com/images/smartphone.jpg",
+    "category": "Electronics",
+    "price": 499
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeaa",
+    "name": "Smartphone",
+    "description": "Latest 5G smartphone with high resolution display",
+    "image": "https://example.com/images/smartphone.jpg",
+    "category": "Electronics",
+    "price": 499
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeab",
+    "name": "Laptop",
+    "description": "Lightweight laptop with powerful performance",
+    "image": "https://example.com/images/laptop.jpg",
+    "category": "Electronics",
+    "price": 899
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeac",
+    "name": "Tablet",
+    "description": "10-inch tablet with high-resolution display and stylus support",
+    "image": "https://example.com/images/tablet.jpg",
+    "category": "Electronics",
+    "price": 299
+  },
+  {
+    "_id": "642c155b2c4774f05c36eead",
+    "name": "Smartwatch",
+    "description": "Smartwatch with heart rate monitor and GPS tracking",
+    "image": "https://example.com/images/smartwatch.jpg",
+    "category": "Electronics",
+    "price": 199
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeae",
+    "name": "Wireless Earbuds",
+    "description": "Noise-cancelling wireless earbuds with long battery life",
+    "image": "https://example.com/images/earbuds.jpg",
+    "category": "Electronics",
+    "price": 149
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeaf",
+    "name": "Gaming Console",
+    "description": "Next-gen gaming console with 4K support",
+    "image": "https://example.com/images/console.jpg",
+    "category": "Electronics",
+    "price": 499
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb0",
+    "name": "Digital Camera",
+    "description": "High-resolution digital camera for photography enthusiasts",
+    "image": "https://example.com/images/camera.jpg",
+    "category": "Electronics",
+    "price": 599
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb1",
+    "name": "Bluetooth Speaker",
+    "description": "Portable Bluetooth speaker with crystal-clear sound",
+    "image": "https://example.com/images/speaker.jpg",
+    "category": "Electronics",
+    "price": 79
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb2",
+    "name": "External Hard Drive",
+    "description": "1TB external hard drive for data backup and storage",
+    "image": "https://example.com/images/harddrive.jpg",
+    "category": "Electronics",
+    "price": 89
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb3",
+    "name": "Action Camera",
+    "description": "Compact action camera for adventure and sports",
+    "image": "https://example.com/images/action-camera.jpg",
+    "category": "Electronics",
+    "price": 199
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb4",
+    "name": "VR Headset",
+    "description": "Immersive virtual reality headset for gaming and entertainment",
+    "image": "https://example.com/images/vr-headset.jpg",
+    "category": "Electronics",
+    "price": 299
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb5",
+    "name": "Smart Home Hub",
+    "description": "Control all your smart home devices from one hub",
+    "image": "https://example.com/images/smart-home-hub.jpg",
+    "category": "Electronics",
+    "price": 129
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb6",
+    "name": "Wireless Charger",
+    "description": "Fast wireless charger compatible with all Qi-enabled devices",
+    "image": "https://example.com/images/wireless-charger.jpg",
+    "category": "Electronics",
+    "price": 39
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb7",
+    "name": "Portable Monitor",
+    "description": "15-inch portable monitor for work and travel",
+    "image": "https://example.com/images/portable-monitor.jpg",
+    "category": "Electronics",
+    "price": 199
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb8",
+    "name": "Drone",
+    "description": "Quadcopter drone with HD camera for aerial photography",
+    "image": "https://example.com/images/drone.jpg",
+    "category": "Electronics",
+    "price": 399
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeab",
+    "name": "T-Shirt",
+    "description": "Cotton t-shirt with modern design",
+    "image": "https://example.com/images/tshirt.jpg",
+    "category": "Fashion & Apparel",
+    "price": 25
+  },
+    {
+    "_id": "642c155b2c4774f05c36eeab",
+    "name": "T-Shirt",
+    "description": "Cotton t-shirt with modern design",
+    "image": "https://example.com/images/tshirt1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 25
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeac",
+    "name": "Jeans",
+    "description": "Slim-fit denim jeans for casual wear",
+    "image": "https://example.com/images/jeans1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 45
+  },
+  {
+    "_id": "642c155b2c4774f05c36eead",
+    "name": "Sneakers",
+    "description": "Comfortable sneakers for everyday use",
+    "image": "https://example.com/images/sneakers1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 60
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeae",
+    "name": "Jacket",
+    "description": "Warm jacket suitable for winter",
+    "image": "https://example.com/images/jacket1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 80
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeaf",
+    "name": "Cap",
+    "description": "Stylish baseball cap for outdoor use",
+    "image": "https://example.com/images/cap1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 15
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb0",
+    "name": "Dress",
+    "description": "Elegant dress for casual and party occasions",
+    "image": "https://example.com/images/dress1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 55
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb1",
+    "name": "Shorts",
+    "description": "Comfortable cotton shorts for summer",
+    "image": "https://example.com/images/shorts1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 20
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb2",
+    "name": "Sweater",
+    "description": "Woolen sweater for cold weather",
+    "image": "https://example.com/images/sweater1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 40
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb3",
+    "name": "Scarf",
+    "description": "Soft scarf for winter protection",
+    "image": "https://example.com/images/scarf1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 18
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb4",
+    "name": "Belt",
+    "description": "Leather belt for casual and formal wear",
+    "image": "https://example.com/images/belt1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 22
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb5",
+    "name": "Sunglasses",
+    "description": "UV-protected sunglasses with stylish frame",
+    "image": "https://example.com/images/sunglasses1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 35
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb6",
+    "name": "Boots",
+    "description": "Durable boots for outdoor activities",
+    "image": "https://example.com/images/boots1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 75
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb7",
+    "name": "Blouse",
+    "description": "Stylish blouse for casual and office wear",
+    "image": "https://example.com/images/blouse1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 30
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb8",
+    "name": "Skirt",
+    "description": "Elegant skirt for casual and party occasions",
+    "image": "https://example.com/images/skirt1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 35
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb9",
+    "name": "Hoodie",
+    "description": "Comfortable hoodie for everyday wear",
+    "image": "https://example.com/images/hoodie1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 50
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeba",
+    "name": "Watch",
+    "description": "Classic wristwatch with leather strap",
+    "image": "https://example.com/images/watch1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 65
+  },
+  {
+    "_id": "642c155b2c4774f05c36eebb",
+    "name": "Handbag",
+    "description": "Leather handbag for daily use",
+    "image": "https://example.com/images/handbag1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 70
+  },
+  {
+    "_id": "642c155b2c4774f05c36eebc",
+    "name": "Sandals",
+    "description": "Comfortable sandals for summer",
+    "image": "https://example.com/images/sandals1.jpg",
+    "category": "Fashion & Apparel",
+    "price": 28
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeac",
+    "name": "Microwave Oven",
+    "description": "Compact microwave oven with fast heating",
+    "image": "https://example.com/images/microwave.jpg",
+    "category": "Home & Kitchen",
+    "price": 120
+  },
+   {
+    "_id": "642c155b2c4774f05c36eeac",
+    "name": "Microwave Oven",
+    "description": "Compact microwave oven with fast heating",
+    "image": "https://example.com/images/microwave1.jpg",
+    "category": "Home & Kitchen",
+    "price": 120
+  },
+  {
+    "_id": "642c155b2c4774f05c36eead",
+    "name": "Blender",
+    "description": "High-speed blender for smoothies and shakes",
+    "image": "https://example.com/images/blender1.jpg",
+    "category": "Home & Kitchen",
+    "price": 80
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeae",
+    "name": "Toaster",
+    "description": "2-slice toaster with adjustable browning settings",
+    "image": "https://example.com/images/toaster1.jpg",
+    "category": "Home & Kitchen",
+    "price": 35
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeaf",
+    "name": "Coffee Maker",
+    "description": "Automatic coffee maker with timer",
+    "image": "https://example.com/images/coffeemaker1.jpg",
+    "category": "Home & Kitchen",
+    "price": 90
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb0",
+    "name": "Air Fryer",
+    "description": "Digital air fryer with multiple cooking modes",
+    "image": "https://example.com/images/airfryer1.jpg",
+    "category": "Home & Kitchen",
+    "price": 150
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb1",
+    "name": "Electric Kettle",
+    "description": "Fast-boiling electric kettle with auto shut-off",
+    "image": "https://example.com/images/kettle1.jpg",
+    "category": "Home & Kitchen",
+    "price": 40
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb2",
+    "name": "Rice Cooker",
+    "description": "1.8L rice cooker with keep-warm function",
+    "image": "https://example.com/images/ricecooker1.jpg",
+    "category": "Home & Kitchen",
+    "price": 60
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb3",
+    "name": "Juicer",
+    "description": "Cold press juicer for fresh fruit and vegetable juice",
+    "image": "https://example.com/images/juicer1.jpg",
+    "category": "Home & Kitchen",
+    "price": 110
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb4",
+    "name": "Stand Mixer",
+    "description": "Professional stand mixer for baking",
+    "image": "https://example.com/images/standmixer1.jpg",
+    "category": "Home & Kitchen",
+    "price": 250
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb5",
+    "name": "Food Processor",
+    "description": "Multi-function food processor for chopping and slicing",
+    "image": "https://example.com/images/foodprocessor1.jpg",
+    "category": "Home & Kitchen",
+    "price": 130
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb6",
+    "name": "Electric Grill",
+    "description": "Indoor electric grill for healthy cooking",
+    "image": "https://example.com/images/grill1.jpg",
+    "category": "Home & Kitchen",
+    "price": 120
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb7",
+    "name": "Cookware Set",
+    "description": "Non-stick cookware set for all your cooking needs",
+    "image": "https://example.com/images/cookwareset1.jpg",
+    "category": "Home & Kitchen",
+    "price": 180
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb8",
+    "name": "Dish Rack",
+    "description": "Stainless steel dish rack with drip tray",
+    "image": "https://example.com/images/dishrack1.jpg",
+    "category": "Home & Kitchen",
+    "price": 35
+  },
+  {
+    "_id": "642c155b2c4774f05c36eead",
+    "name": "Face Cream",
+    "description": "Hydrating face cream for all skin types",
+    "image": "https://example.com/images/face-cream.jpg",
+    "category": "Beauty & Personal Care",
+    "price": 35
+  },
+   {
+    "_id": "642c155b2c4774f05c36eead",
+    "name": "Face Cream",
+    "description": "Hydrating face cream for all skin types",
+    "image": "https://example.com/images/face-cream1.jpg",
+    "category": "Beauty & Personal Care",
+    "price": 35
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeae",
+    "name": "Shampoo",
+    "description": "Nourishing shampoo for smooth and shiny hair",
+    "image": "https://example.com/images/shampoo1.jpg",
+    "category": "Beauty & Personal Care",
+    "price": 20
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeaf",
+    "name": "Conditioner",
+    "description": "Moisturizing conditioner for healthy hair",
+    "image": "https://example.com/images/conditioner1.jpg",
+    "category": "Beauty & Personal Care",
+    "price": 22
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb0",
+    "name": "Body Lotion",
+    "description": "Hydrating body lotion for smooth skin",
+    "image": "https://example.com/images/body-lotion1.jpg",
+    "category": "Beauty & Personal Care",
+    "price": 25
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb1",
+    "name": "Lip Balm",
+    "description": "Moisturizing lip balm with natural ingredients",
+    "image": "https://example.com/images/lip-balm1.jpg",
+    "category": "Beauty & Personal Care",
+    "price": 10
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb2",
+    "name": "Perfume",
+    "description": "Long-lasting fragrance for daily use",
+    "image": "https://example.com/images/perfume1.jpg",
+    "category": "Beauty & Personal Care",
+    "price": 45
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb3",
+    "name": "Sunscreen",
+    "description": "SPF 50 sunscreen for skin protection",
+    "image": "https://example.com/images/sunscreen1.jpg",
+    "category": "Beauty & Personal Care",
+    "price": 30
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb4",
+    "name": "Hand Cream",
+    "description": "Nourishing hand cream for dry hands",
+    "image": "https://example.com/images/hand-cream1.jpg",
+    "category": "Beauty & Personal Care",
+    "price": 18
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb5",
+    "name": "Face Wash",
+    "description": "Gentle face wash for daily cleansing",
+    "image": "https://example.com/images/face-wash1.jpg",
+    "category": "Beauty & Personal Care",
+    "price": 15
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb6",
+    "name": "Hair Oil",
+    "description": "Nourishing hair oil for healthy growth",
+    "image": "https://example.com/images/hair-oil1.jpg",
+    "category": "Beauty & Personal Care",
+    "price": 28
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb7",
+    "name": "Body Scrub",
+    "description": "Exfoliating body scrub for smooth skin",
+    "image": "https://example.com/images/body-scrub1.jpg",
+    "category": "Beauty & Personal Care",
+    "price": 32
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb8",
+    "name": "Makeup Kit",
+    "description": "Complete makeup kit for all occasions",
+    "image": "https://example.com/images/makeup-kit1.jpg",
+    "category": "Beauty & Personal Care",
+    "price": 55
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb9",
+    "name": "Nail Polish",
+    "description": "Long-lasting nail polish with vibrant colors",
+    "image": "https://example.com/images/nail-polish1.jpg",
+    "category": "Beauty & Personal Care",
+    "price": 12
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeba",
+    "name": "Hair Dryer",
+    "description": "High-power hair dryer with multiple heat settings",
+    "image": "https://example.com/images/hair-dryer1.jpg",
+    "category": "Beauty & Personal Care",
+    "price": 50
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeae",
+    "name": "Yoga Mat",
+    "description": "Non-slip yoga mat for fitness and exercise",
+    "image": "https://example.com/images/yoga-mat.jpg",
+    "category": "Sports & Outdoors",
+    "price": 40
+  },
+    {
+    "_id": "642c155b2c4774f05c36eeae",
+    "name": "Yoga Mat",
+    "description": "Non-slip yoga mat for fitness and exercise",
+    "image": "https://example.com/images/yoga-mat1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 40
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeaf",
+    "name": "Dumbbell Set",
+    "description": "Adjustable dumbbell set for strength training",
+    "image": "https://example.com/images/dumbbell1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 120
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb0",
+    "name": "Treadmill",
+    "description": "Foldable treadmill with multiple speed settings",
+    "image": "https://example.com/images/treadmill1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 500
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb1",
+    "name": "Resistance Bands",
+    "description": "Set of resistance bands for strength and flexibility",
+    "image": "https://example.com/images/resistance-bands1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 25
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb2",
+    "name": "Jump Rope",
+    "description": "Durable jump rope for cardio workouts",
+    "image": "https://example.com/images/jump-rope1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 15
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb3",
+    "name": "Exercise Ball",
+    "description": "Stability exercise ball for core workouts",
+    "image": "https://example.com/images/exercise-ball1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 30
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb4",
+    "name": "Pull-Up Bar",
+    "description": "Doorway pull-up bar for upper body strength",
+    "image": "https://example.com/images/pullup-bar1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 50
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb5",
+    "name": "Cycling Helmet",
+    "description": "Lightweight and safe cycling helmet",
+    "image": "https://example.com/images/cycling-helmet1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 45
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb6",
+    "name": "Running Shoes",
+    "description": "Comfortable running shoes for daily workouts",
+    "image": "https://example.com/images/running-shoes1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 70
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb7",
+    "name": "Camping Tent",
+    "description": "Waterproof 2-person camping tent",
+    "image": "https://example.com/images/camping-tent1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 150
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb8",
+    "name": "Sleeping Bag",
+    "description": "Lightweight sleeping bag for camping",
+    "image": "https://example.com/images/sleeping-bag1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 60
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb9",
+    "name": "Fitness Tracker",
+    "description": "Smart fitness tracker with heart rate monitor",
+    "image": "https://example.com/images/fitness-tracker1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 80
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeba",
+    "name": "Sports Water Bottle",
+    "description": "Durable water bottle for workouts",
+    "image": "https://example.com/images/water-bottle1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 12
+  },
+  {
+    "_id": "642c155b2c4774f05c36eebb",
+    "name": "Basketball",
+    "description": "Official size basketball for indoor/outdoor use",
+    "image": "https://example.com/images/basketball1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 25
+  },
+  {
+    "_id": "642c155b2c4774f05c36eebc",
+    "name": "Football",
+    "description": "Durable football for professional play",
+    "image": "https://example.com/images/football1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 30
+  },
+  {
+    "_id": "642c155b2c4774f05c36eebd",
+    "name": "Tennis Racket",
+    "description": "Lightweight tennis racket with grip",
+    "image": "https://example.com/images/tennis-racket1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 55
+  },
+  {
+    "_id": "642c155b2c4774f05c36eebe",
+    "name": "Golf Clubs Set",
+    "description": "Complete set of golf clubs for beginners",
+    "image": "https://example.com/images/golf-clubs1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 300
+  },
+  {
+    "_id": "642c155b2c4774f05c36eebf",
+    "name": "Hiking Backpack",
+    "description": "Spacious backpack for hiking and trekking",
+    "image": "https://example.com/images/hiking-backpack1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 85
+  },
+  {
+    "_id": "642c155b2c4774f05c36eec0",
+    "name": "Camping Stove",
+    "description": "Portable camping stove for outdoor cooking",
+    "image": "https://example.com/images/camping-stove1.jpg",
+    "category": "Sports & Outdoors",
+    "price": 70
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeaf",
+    "name": "Notebook Set",
+    "description": "Pack of 5 ruled notebooks for school and office use",
+    "image": "https://example.com/images/notebook.jpg",
+    "category": "Books & Stationery",
+    "price": 15
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeaf",
+    "name": "Notebook Set",
+    "description": "Pack of 5 ruled notebooks for school and office use",
+    "image": "https://example.com/images/notebook1.jpg",
+    "category": "Books & Stationery",
+    "price": 15
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb0",
+    "name": "Pen Set",
+    "description": "Set of 10 ballpoint pens with smooth ink flow",
+    "image": "https://example.com/images/pen-set1.jpg",
+    "category": "Books & Stationery",
+    "price": 8
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb1",
+    "name": "Colored Pencils",
+    "description": "Pack of 24 colored pencils for drawing and sketching",
+    "image": "https://example.com/images/colored-pencils1.jpg",
+    "category": "Books & Stationery",
+    "price": 12
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb2",
+    "name": "Highlighters",
+    "description": "Set of 6 neon highlighters for marking text",
+    "image": "https://example.com/images/highlighters1.jpg",
+    "category": "Books & Stationery",
+    "price": 6
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb3",
+    "name": "Stapler",
+    "description": "Durable stapler with 1000 staples included",
+    "image": "https://example.com/images/stapler1.jpg",
+    "category": "Books & Stationery",
+    "price": 10
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb4",
+    "name": "Eraser Set",
+    "description": "Pack of 4 soft erasers for clean erasing",
+    "image": "https://example.com/images/eraser-set1.jpg",
+    "category": "Books & Stationery",
+    "price": 5
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb5",
+    "name": "Ruler",
+    "description": "30cm transparent ruler for precise measurement",
+    "image": "https://example.com/images/ruler1.jpg",
+    "category": "Books & Stationery",
+    "price": 3
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb6",
+    "name": "Glue Stick",
+    "description": "Pack of 2 non-toxic glue sticks for crafts",
+    "image": "https://example.com/images/glue-stick1.jpg",
+    "category": "Books & Stationery",
+    "price": 4
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb7",
+    "name": "Scissors",
+    "description": "Stainless steel scissors for cutting paper and crafts",
+    "image": "https://example.com/images/scissors1.jpg",
+    "category": "Books & Stationery",
+    "price": 7
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb8",
+    "name": "Planner",
+    "description": "Weekly planner with monthly overview for organization",
+    "image": "https://example.com/images/planner1.jpg",
+    "category": "Books & Stationery",
+    "price": 20
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb0",
+    "name": "Lego Set",
+    "description": "Creative Lego building blocks for kids",
+    "image": "https://example.com/images/lego.jpg",
+    "category": "Toys & Games",
+    "price": 50
+  },
+   {
+    "_id": "642c155b2c4774f05c36eeb0",
+    "name": "Lego Set",
+    "description": "Creative Lego building blocks for kids",
+    "image": "https://example.com/images/lego1.jpg",
+    "category": "Toys & Games",
+    "price": 50
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb1",
+    "name": "Puzzle Game",
+    "description": "500-piece jigsaw puzzle for kids and adults",
+    "image": "https://example.com/images/puzzle1.jpg",
+    "category": "Toys & Games",
+    "price": 20
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb2",
+    "name": "Remote Car",
+    "description": "Battery-powered remote control car for kids",
+    "image": "https://example.com/images/remote-car1.jpg",
+    "category": "Toys & Games",
+    "price": 35
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb3",
+    "name": "Doll Set",
+    "description": "Set of dolls with clothes and accessories",
+    "image": "https://example.com/images/doll-set1.jpg",
+    "category": "Toys & Games",
+    "price": 40
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb4",
+    "name": "Board Game",
+    "description": "Fun board game for family and friends",
+    "image": "https://example.com/images/board-game1.jpg",
+    "category": "Toys & Games",
+    "price": 30
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb5",
+    "name": "Toy Train",
+    "description": "Electric toy train set for kids",
+    "image": "https://example.com/images/toy-train1.jpg",
+    "category": "Toys & Games",
+    "price": 45
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb6",
+    "name": "Action Figure",
+    "description": "Collectible action figure with movable joints",
+    "image": "https://example.com/images/action-figure1.jpg",
+    "category": "Toys & Games",
+    "price": 25
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb7",
+    "name": "Building Blocks",
+    "description": "Colorful building blocks for creativity and learning",
+    "image": "https://example.com/images/building-blocks1.jpg",
+    "category": "Toys & Games",
+    "price": 28
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb1",
+    "name": "Vitamin C",
+    "description": "Daily Vitamin C supplement for immunity support",
+    "image": "https://example.com/images/vitamin-c.jpg",
+    "category": "Health & Wellness",
+    "price": 20
+  },
+   {
+    "_id": "642c155b2c4774f05c36eeb1",
+    "name": "Vitamin C",
+    "description": "Daily Vitamin C supplement for immunity support",
+    "image": "https://example.com/images/vitamin-c1.jpg",
+    "category": "Health & Wellness",
+    "price": 20
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb2",
+    "name": "Multivitamin Tablets",
+    "description": "Complete multivitamin tablets for overall health",
+    "image": "https://example.com/images/multivitamin1.jpg",
+    "category": "Health & Wellness",
+    "price": 25
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb3",
+    "name": "Omega-3 Capsules",
+    "description": "Fish oil capsules for heart and brain health",
+    "image": "https://example.com/images/omega31.jpg",
+    "category": "Health & Wellness",
+    "price": 30
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb4",
+    "name": "Protein Powder",
+    "description": "High-protein powder for muscle building",
+    "image": "https://example.com/images/protein-powder1.jpg",
+    "category": "Health & Wellness",
+    "price": 45
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb5",
+    "name": "Herbal Tea",
+    "description": "Relaxing herbal tea for digestion and wellness",
+    "image": "https://example.com/images/herbal-tea1.jpg",
+    "category": "Health & Wellness",
+    "price": 12
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb6",
+    "name": "Electrolyte Drink",
+    "description": "Hydrating drink to replenish electrolytes after exercise",
+    "image": "https://example.com/images/electrolyte-drink1.jpg",
+    "category": "Health & Wellness",
+    "price": 8
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb7",
+    "name": "Calcium Tablets",
+    "description": "Calcium supplement for strong bones and teeth",
+    "image": "https://example.com/images/calcium1.jpg",
+    "category": "Health & Wellness",
+    "price": 22
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb2",
+    "name": "Car Seat Cover",
+    "description": "Premium leather car seat cover for comfort",
+    "image": "https://example.com/images/car-seat.jpg",
+    "category": "Automotive",
+    "price": 80
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb2",
+    "name": "Car Seat Cover",
+    "description": "Premium leather car seat cover for comfort",
+    "image": "https://example.com/images/car-seat1.jpg",
+    "category": "Automotive",
+    "price": 80
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb3",
+    "name": "Car Floor Mats",
+    "description": "All-weather car floor mats for protection",
+    "image": "https://example.com/images/floor-mats1.jpg",
+    "category": "Automotive",
+    "price": 50
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb4",
+    "name": "Car Air Freshener",
+    "description": "Long-lasting car air freshener with pleasant fragrance",
+    "image": "https://example.com/images/air-freshener1.jpg",
+    "category": "Automotive",
+    "price": 10
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb5",
+    "name": "Car Phone Holder",
+    "description": "Adjustable phone holder for car dashboard",
+    "image": "https://example.com/images/phone-holder1.jpg",
+    "category": "Automotive",
+    "price": 15
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb6",
+    "name": "Car Vacuum Cleaner",
+    "description": "Portable vacuum cleaner for car interior",
+    "image": "https://example.com/images/vacuum-cleaner1.jpg",
+    "category": "Automotive",
+    "price": 60
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb7",
+    "name": "Car Battery Charger",
+    "description": "Automatic battery charger for vehicles",
+    "image": "https://example.com/images/battery-charger1.jpg",
+    "category": "Automotive",
+    "price": 70
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb8",
+    "name": "Car LED Lights",
+    "description": "Set of LED lights for car interior and exterior",
+    "image": "https://example.com/images/led-lights1.jpg",
+    "category": "Automotive",
+    "price": 35
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb9",
+    "name": "Steering Wheel Cover",
+    "description": "Leather steering wheel cover for better grip",
+    "image": "https://example.com/images/steering-wheel1.jpg",
+    "category": "Automotive",
+    "price": 25
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeba",
+    "name": "Car Tool Kit",
+    "description": "Essential tool kit for car maintenance",
+    "image": "https://example.com/images/tool-kit1.jpg",
+    "category": "Automotive",
+    "price": 55
+  },
+  {
+    "_id": "642c155b2c4774f05c36eebb",
+    "name": "Car Sunshade",
+    "description": "Foldable car sunshade to protect from heat",
+    "image": "https://example.com/images/sunshade1.jpg",
+    "category": "Automotive",
+    "price": 20
+  },
+  {
+    "_id": "642c155b2c4774f05c36eebc",
+    "name": "Car Tire Inflator",
+    "description": "Portable tire inflator for emergency use",
+    "image": "https://example.com/images/tire-inflator1.jpg",
+    "category": "Automotive",
+    "price": 65
+  },
+  {
+    "_id": "642c155b2c4774f05c36eebd",
+    "name": "Car Dash Cam",
+    "description": "HD dash cam for recording your journeys",
+    "image": "https://example.com/images/dash-cam1.jpg",
+    "category": "Automotive",
+    "price": 120
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb3",
+    "name": "Organic Honey",
+    "description": "Pure organic honey from local farms",
+    "image": "https://example.com/images/honey.jpg",
+    "category": "Groceries",
+    "price": 12
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb3",
+    "name": "Organic Honey",
+    "description": "Pure organic honey from local farms",
+    "image": "https://example.com/images/honey1.jpg",
+    "category": "Groceries",
+    "price": 12
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb4",
+    "name": "Almonds",
+    "description": "Raw premium almonds packed fresh",
+    "image": "https://example.com/images/almonds1.jpg",
+    "category": "Groceries",
+    "price": 18
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb5",
+    "name": "Brown Rice",
+    "description": "Healthy and nutritious brown rice 1kg pack",
+    "image": "https://example.com/images/brown-rice1.jpg",
+    "category": "Groceries",
+    "price": 10
+  },
+    {
+    "_id": "642c155b2c4774f05c36eef0",
+    "name": "Wireless Earbuds",
+    "description": "High-quality wireless earbuds with noise cancellation",
+    "image": "https://example.com/images/earbuds1.jpg",
+    "category": "Popular",
+    "price": 79
+  },
+  {
+    "_id": "642c155b2c4774f05c36eef1",
+    "name": "Leather Wallet",
+    "description": "Premium leather wallet with multiple compartments",
+    "image": "https://example.com/images/wallet1.jpg",
+    "category": "Popular",
+    "price": 35
+  },
+  {
+    "_id": "642c155b2c4774f05c36eef2",
+    "name": "Blender",
+    "description": "High-speed blender for smoothies and shakes",
+    "image": "https://example.com/images/blender1.jpg",
+    "category": "Popular",
+    "price": 50
+  },
+  {
+    "_id": "642c155b2c4774f05c36eef3",
+    "name": "Lipstick Set",
+    "description": "Set of 5 long-lasting matte lipsticks",
+    "image": "https://example.com/images/lipstick1.jpg",
+    "category": "Popular",
+    "price": 25
+  },
+  {
+    "_id": "642c155b2c4774f05c36eef4",
+    "name": "Yoga Block",
+    "description": "Foam yoga block for stretching and balance",
+    "image": "https://example.com/images/yoga-block1.jpg",
+    "category": "Popular",
+    "price": 12
+  },
+  {
+    "_id": "642c155b2c4774f05c36eef5",
+    "name": "Notebook Set",
+    "description": "Pack of 3 notebooks for study and office",
+    "image": "https://example.com/images/notebooks1.jpg",
+    "category": "Popular",
+    "price": 10
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb6",
+    "name": "Olive Oil",
+    "description": "Extra virgin olive oil 500ml bottle",
+    "image": "https://example.com/images/olive-oil1.jpg",
+    "category": "Groceries",
+    "price": 15
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb7",
+    "name": "Whole Wheat Flour",
+    "description": "Premium whole wheat flour 2kg pack",
+    "image": "https://example.com/images/whole-wheat1.jpg",
+    "category": "Groceries",
+    "price": 8
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb8",
+    "name": "Oats",
+    "description": "Healthy breakfast oats 1kg pack",
+    "image": "https://example.com/images/oats1.jpg",
+    "category": "Groceries",
+    "price": 6
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb9",
+    "name": "Peanut Butter",
+    "description": "Creamy peanut butter jar 500g",
+    "image": "https://example.com/images/peanut-butter1.jpg",
+    "category": "Groceries",
+    "price": 7
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeba",
+    "name": "Sugar",
+    "description": "Refined white sugar 2kg pack",
+    "image": "https://example.com/images/sugar1.jpg",
+    "category": "Groceries",
+    "price": 5
+  },
+  {
+    "_id": "642c155b2c4774f05c36eebb",
+    "name": "Black Tea",
+    "description": "Premium black tea leaves 250g",
+    "image": "https://example.com/images/black-tea1.jpg",
+    "category": "Groceries",
+    "price": 4
+  },
+  {
+    "_id": "642c155b2c4774f05c36eebc",
+    "name": "Coffee Beans",
+    "description": "Freshly roasted coffee beans 500g",
+    "image": "https://example.com/images/coffee-beans1.jpg",
+    "category": "Groceries",
+    "price": 20
+  },
+  {
+    "_id": "642c155b2c4774f05c36eebd",
+    "name": "Pasta",
+    "description": "Italian durum wheat pasta 1kg",
+    "image": "https://example.com/images/pasta1.jpg",
+    "category": "Groceries",
+    "price": 9
+  },
+  {
+    "_id": "642c155b2c4774f05c36eebe",
+    "name": "Canned Beans",
+    "description": "Canned kidney beans 400g pack",
+    "image": "https://example.com/images/canned-beans1.jpg",
+    "category": "Groceries",
+    "price": 3
+  },
+  {
+    "_id": "642c155b2c4774f05c36eebf",
+    "name": "Cheddar Cheese",
+    "description": "Aged cheddar cheese block 200g",
+    "image": "https://example.com/images/cheddar1.jpg",
+    "category": "Groceries",
+    "price": 6
+  },
+  {
+    "_id": "642c155b2c4774f05c36eec0",
+    "name": "Yogurt",
+    "description": "Natural plain yogurt 500g",
+    "image": "https://example.com/images/yogurt1.jpg",
+    "category": "Groceries",
+    "price": 4
+  },
+  {
+    "_id": "642c155b2c4774f05c36eec1",
+    "name": "Eggs",
+    "description": "Fresh farm eggs, dozen pack",
+    "image": "https://example.com/images/eggs1.jpg",
+    "category": "Groceries",
+    "price": 6
+  },
+  {
+    "_id": "642c155b2c4774f05c36eec2",
+    "name": "Milk",
+    "description": "Fresh whole milk 1L",
+    "image": "https://example.com/images/milk1.jpg",
+    "category": "Groceries",
+    "price": 3
+  },
+  {
+    "_id": "642c155b2c4774f05c36eec3",
+    "name": "Butter",
+    "description": "Unsalted butter 200g",
+    "image": "https://example.com/images/butter1.jpg",
+    "category": "Groceries",
+    "price": 5
+  },
+  {
+    "_id": "642c155b2c4774f05c36eec4",
+    "name": "Salt",
+    "description": "Fine table salt 1kg",
+    "image": "https://example.com/images/salt1.jpg",
+    "category": "Groceries",
+    "price": 2
+  },
+  {
+    "_id": "642c155b2c4774f05c36eec5",
+    "name": "Cooking Oil",
+    "description": "Vegetable cooking oil 1L",
+    "image": "https://example.com/images/cooking-oil1.jpg",
+    "category": "Groceries",
+    "price": 5
+  }
+]
