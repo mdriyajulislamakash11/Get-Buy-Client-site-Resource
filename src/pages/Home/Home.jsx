@@ -4,6 +4,7 @@ import PickNShop from "../PickN-Shop/PickNShop";
 import PopularCategory from "../popular-Category/PopularCategory";
 import PopularProduct from "../Popular-Product/PopularProduct";
 import ShoudTry from "../ShoudTry/ShoudTry";
+import TestMunial from "../TestMunial/TestMunial";
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
             <PopularProduct />
             <ShoudTry />
             <FutureProduct />
+            <TestMunial />
         </div>
     );
 };
