@@ -2,28 +2,71 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Navber = () => {
-  const navOptions = (
-    <>
-      <li>
-        <NavLink to="/">Home</NavLink>
-      </li>
-      <li>
-        <NavLink to="/shop">Shop</NavLink>
-      </li>
-      <li>
-        <NavLink to="/category">Categories </NavLink>
-      </li>
-      <li>
-        <NavLink to="/cart">Cart</NavLink>
-      </li>
-      <li>
-        <NavLink to="/about">About Us</NavLink>
-      </li>
-      <li>
-        <NavLink to="/contact">Contact Us</NavLink>
-      </li>
-    </>
-  );
+const navOptions = (
+  <>
+    <li>
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive ? "text-yellow-500 font-bold" : "text-white"
+        }
+      >
+        Home
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        to="/shop"
+        className={({ isActive }) =>
+          isActive ? "text-yellow-500 font-bold" : "text-white"
+        }
+      >
+        Our Shop
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        to="/category"
+        className={({ isActive }) =>
+          isActive ? "text-yellow-500 font-bold" : "text-white"
+        }
+      >
+        Categories
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        to="/cart"
+        className={({ isActive }) =>
+          isActive ? "text-yellow-500 font-bold" : "text-white"
+        }
+      >
+        Cart
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        to="/about"
+        className={({ isActive }) =>
+          isActive ? "text-yellow-500 font-bold" : "text-white"
+        }
+      >
+        About Us
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        to="/contact"
+        className={({ isActive }) =>
+          isActive ? "text-yellow-500 font-bold" : "text-white"
+        }
+      >
+        Contact Us
+      </NavLink>
+    </li>
+  </>
+);
+
 
   return (
     <div>
