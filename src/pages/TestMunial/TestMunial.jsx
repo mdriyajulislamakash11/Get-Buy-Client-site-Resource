@@ -27,7 +27,7 @@ const Testimonial = () => {
   });
 
   return (
-    <>
+    <div className="my-10">
       <SectionTitle
         heading={"Testimonials"}
         subHeading={"What Our Clients Say"}
@@ -42,7 +42,7 @@ const Testimonial = () => {
         <div>
           {reviews?.map((review) => (
             <SwiperSlide key={review._id}>
-              <div className="border p-4 my-2 text-center ">
+              <div className="border p-4  text-center my-8 ">
                 <div className="flex justify-center my-10">
                   <p className="">
                     <Rating
@@ -53,13 +53,13 @@ const Testimonial = () => {
                   </p>
                 </div>
                 <h2 className="text-4xl font-semibold">{review.name}</h2>
-                <p className="my-3">{review.details}</p>
+                <p className="my-3 w-3/6 mx-auto">{review.details}</p>
               </div>
             </SwiperSlide>
           ))}
         </div>
       </Swiper>
-    </>
+    </div>
   );
 };
 
