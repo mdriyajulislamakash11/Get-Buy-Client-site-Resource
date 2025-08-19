@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProductInfoCard = ({ item }) => {
+const ProductInfoCard = ({ item,}) => {
   const { name, description, image, price } = item || {};
 
   return (

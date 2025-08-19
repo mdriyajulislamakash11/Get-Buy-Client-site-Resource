@@ -26,12 +26,12 @@ const navOptions = (
     </li>
     <li>
       <NavLink
-        to="/category"
+        to="/order"
         className={({ isActive }) =>
           isActive ? "text-yellow-500 font-bold" : "text-white"
         }
       >
-        Categories
+        Our Order
       </NavLink>
     </li>
     <li>
