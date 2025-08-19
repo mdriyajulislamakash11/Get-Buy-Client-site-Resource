@@ -22,7 +22,6 @@ const Shop = () => {
     const Electronics = product.filter(item => item.category ===  "Electronics")
     const popular = product.filter(item => item.category ===  "Popular")
     const Fashion = product.filter(item => item.category ===  "Fashion & Apparel")
-    const Jewelry = product.filter(item => item.category ===  "Jewelry & Watches")
     const Home = product.filter(item => item.category ===  "Home & Kitchen")
     const Beauty = product.filter(item => item.category ===  "Beauty & Personal Care")
     const Sports = product.filter(item => item.category ===  "Sports & Outdoors")
@@ -46,8 +45,6 @@ const Shop = () => {
             <ShopCategory items={Electronics} title="Electronics" coverImg={pic1} />
             {/*  */}
             <ShopCategory items={Fashion} title="Fashion & Apparel" coverImg={pic2} />
-            {/*  */}
-            <ShopCategory items={Jewelry} title="Jewelry & Watches" coverImg={pic3} />
             {/*  */}
             <ShopCategory items={Home} title="Home & Kitchen" coverImg={pic4} />
             {/*  */}

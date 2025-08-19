@@ -3,10 +3,10 @@
 const Cover = ({ img, title, description }) => {
   return (
       <div
-      className="hero h-[600px] bg-fixed"
+      className="hero bg-cover h-[600px] bg-fixed"
       style={{
         backgroundImage:
-           `url('${img}')`,
+           `url('${img}')`,  
       }}
     >
       <div className="hero-overlay bg-opacity- "></div>
