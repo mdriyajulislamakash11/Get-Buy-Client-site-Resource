@@ -8,7 +8,6 @@ const PopularProduct = () => {
 
   const popularProduct = product.filter((item) => item.category === "Popular");
 
-  console.log(popularProduct.length);
 
   return (
     <div>
