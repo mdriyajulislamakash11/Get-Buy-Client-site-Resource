@@ -1,9 +1,12 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import useAuth from "../hook/useAuth";
+import { FaShoppingCart } from "react-icons/fa";
+import useCart from "../hook/useCart";
 
 const Navber = () => {
   const { user, logOut } = useAuth();
+  const [cart] = useCart();
 
   const navOptions = (
     <>
@@ -37,14 +40,21 @@ const Navber = () => {
           Our Order
         </NavLink>
       </li>
+      {/* Shopping Cart */}
       <li>
         <NavLink
           to="/cart"
           className={({ isActive }) =>
-            isActive ? "text-yellow-500 font-bold" : "text-white"
+            isActive ? "relative text-yellow-500 font-bold" : "relative text-white"
           }
         >
-          Cart
+          <FaShoppingCart className="text-lg" />
+          {/* badge */}
+          {cart.length > 0 && (
+            <span className="absolute -top-2 -right-3 bg-yellow-500 text-black text-xs font-bold rounded-full px-2 py-0.5">
+              {cart.length}
+            </span>
+          )}
         </NavLink>
       </li>
       <li>
@@ -85,12 +95,7 @@ const Navber = () => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
             <ul
@@ -121,7 +126,7 @@ const Navber = () => {
                 <img
                   src={user.photoURL}
                   alt="profile"
-                  className="w-10 h-10 rounded-full border border-yellow-500"
+                  className="w-10 h-10 rounded-full border-2 border-yellow-500 shadow-md"
                 />
               )}
               <span className="hidden md:inline text-sm font-medium">
