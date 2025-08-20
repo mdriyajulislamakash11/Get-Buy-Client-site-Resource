@@ -37,13 +37,24 @@ const Navber = () => {
             isActive ? "text-yellow-500 font-bold" : "text-white"
           }
         >
-          Our Order
+          Order
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/dashboard"
+          className={({ isActive }) =>
+            isActive ? "text-yellow-500 font-bold" : "text-white"
+          }
+        >
+          Dashboard
+        </NavLink>
+      </li>
+
       {/* Shopping Cart */}
       <li>
         <NavLink
-          to="/cart"
+          to="/dashboard/cart"
           className={({ isActive }) =>
             isActive ? "relative text-yellow-500 font-bold" : "relative text-white"
           }
@@ -55,16 +66,6 @@ const Navber = () => {
               {cart.length}
             </span>
           )}
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            isActive ? "text-yellow-500 font-bold" : "text-white"
-          }
-        >
-          About Us
         </NavLink>
       </li>
       <li>

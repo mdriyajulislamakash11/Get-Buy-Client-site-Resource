@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../hook/useAuth";
 import {
   LoadCanvasTemplate,
@@ -10,6 +10,10 @@ import {
 const Login = () => {
   const { logInUser, googleLogin } = useAuth();
   const [disabled, setDisabled] = useState(true)
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  const from = location?.state?.from?.pathname || '/';
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -24,6 +28,7 @@ const Login = () => {
     logInUser(email, password)
       .then((result) => {
         console.log("✅ User logged in:", result.user);
+          navigate(from, { replace: true });
       })
       .catch((error) => {
         console.error("❌ Login failed:", error.message);
@@ -35,6 +40,7 @@ const Login = () => {
     googleLogin()
       .then((result) => {
         console.log("✅ Google Login Success:", result.user);
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         console.error("❌ Google login failed:", error.message);

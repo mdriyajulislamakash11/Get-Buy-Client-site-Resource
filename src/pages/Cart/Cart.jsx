@@ -1,8 +1,7 @@
-import React from "react";
-import useCart from "../../hook/useCart";
 import { FaTrash } from "react-icons/fa";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../hook/useAxiosSecure";
+import useCart from "../../hook/useCart";
 
 const Cart = () => {
   const [cart, refetch] = useCart();
@@ -10,7 +9,7 @@ const Cart = () => {
 
   const total = cart.reduce((sum, item) => sum + item.price, 0);
 
-    const handleDelete = (id) => {
+  const handleDelete = (id) => {
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
@@ -37,7 +36,7 @@ const Cart = () => {
   };
 
   return (
-    <div className="py-16">
+    <div className="">
       <div className="p-6">
         <h2 className="text-2xl font-bold mb-4">🛒 My Cart</h2>
         <div className="flex justify-between mb-4">
@@ -79,9 +78,12 @@ const Cart = () => {
                   <td className="text-indigo-600 font-semibold">
                     ${item.price}
                   </td>
-                  
+
                   <td>
-                    <button onClick={() => handleDelete(item._id)} className="btn btn-error btn-sm text-white">
+                    <button
+                      onClick={() => handleDelete(item._id)}
+                      className="btn btn-error btn-sm text-white"
+                    >
                       <FaTrash />
                     </button>
                   </td>
