@@ -14,7 +14,7 @@ const ProductCard = ({ item }) => {
         <p>{description}</p>
         <p className="text-indigo-600 font-bold mt-2">${price}</p>
         <div className="card-actions">
-          <Link to={`order/:${category}`}>
+          <Link to={'/'}>
             <button className="btn btn-primary">Buy Now</button>
           </Link>
         </div>
