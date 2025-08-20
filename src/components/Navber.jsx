@@ -26,7 +26,7 @@ const navOptions = (
     </li>
     <li>
       <NavLink
-        to="/order"
+        to="/order/Electronics"
         className={({ isActive }) =>
           isActive ? "text-yellow-500 font-bold" : "text-white"
         }

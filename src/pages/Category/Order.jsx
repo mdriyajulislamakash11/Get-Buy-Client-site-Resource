@@ -5,24 +5,32 @@ import Cover from "../../Shared/Cover/Cover";
 import { useState } from "react";
 import useProduct from "../../hook/useProduct";
 import OrderCard from "./OrderCard";
+import { useParams } from "react-router-dom";
 
 const Order = () => {
   const categories = [
     "Electronics",
-    "Fashion",
-    "Home",
-    "Beauty",
-    "Sports",
-    "Books",
-    "Toys",
-    "Health",
+    "Fashion & Apparel",
+    "Home & Kitchen",
+    "Beauty & Personal Care",
+    "Sports & Outdoors",
+    "Books & Stationery",
+    "Toys & Games",
+    "Health & Wellness",
     "Automotive",
     "Groceries",
   ];
 
-  const initialIndex = 0;
-  const [tabIndex, setTabIndex] = useState(initialIndex);
+  // params থেকে category নেওয়া
+  const { category } = useParams();
+  const decodedCategory = decodeURIComponent(category); // space & special char ঠিক করতে
+  console.log("Decoded Category:", decodedCategory);
 
+  // category index বের করা
+  const initialIndex = categories.indexOf(decodedCategory);
+  const [tabIndex, setTabIndex] = useState(initialIndex === -1 ? 0 : initialIndex);
+
+  // products load করা
   const [product] = useProduct();
 
   const Electronics = product.filter((item) => item.category === "Electronics");
@@ -36,8 +44,6 @@ const Order = () => {
   const Automotive = product.filter((item) => item.category === "Automotive");
   const Groceries = product.filter((item) => item.category === "Groceries");
 
-  console.log(Groceries)
-
   return (
     <>
       <Cover
@@ -47,48 +53,24 @@ const Order = () => {
       />
 
       <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-        <TabList className="flex justify-center my-6">
+        {/* Tabs list */}
+        <TabList className="flex flex-wrap justify-center my-6 gap-2">
           {categories.map((cat, i) => (
             <Tab key={i}>{cat}</Tab>
           ))}
         </TabList>
 
-        <TabPanel>
-          <OrderCard items={Electronics} />
-        </TabPanel>
-        <TabPanel>
-          <OrderCard items={Fashion} />
-        </TabPanel>
-        <TabPanel>
-          <OrderCard items={Home} />
-        </TabPanel>
-        
-        <TabPanel>
-          <OrderCard items={Beauty} />
-        </TabPanel>
-        
-        <TabPanel>
-          <OrderCard items={Sports} />
-        </TabPanel>
-        
-        <TabPanel>
-          <OrderCard items={Books} />
-        </TabPanel>
-        
-        <TabPanel>
-          <OrderCard items={Toys} />
-        </TabPanel>
-        
-        <TabPanel>
-          <OrderCard items={Health} />
-        </TabPanel>
-
-        <TabPanel>
-          <OrderCard items={Automotive} />
-        </TabPanel>
-        <TabPanel>
-          <OrderCard items={Groceries} />
-        </TabPanel>
+        {/* Tab Panels */}
+        <TabPanel><OrderCard items={Electronics} /></TabPanel>
+        <TabPanel><OrderCard items={Fashion} /></TabPanel>
+        <TabPanel><OrderCard items={Home} /></TabPanel>
+        <TabPanel><OrderCard items={Beauty} /></TabPanel>
+        <TabPanel><OrderCard items={Sports} /></TabPanel>
+        <TabPanel><OrderCard items={Books} /></TabPanel>
+        <TabPanel><OrderCard items={Toys} /></TabPanel>
+        <TabPanel><OrderCard items={Health} /></TabPanel>
+        <TabPanel><OrderCard items={Automotive} /></TabPanel>
+        <TabPanel><OrderCard items={Groceries} /></TabPanel>
       </Tabs>
     </>
   );
