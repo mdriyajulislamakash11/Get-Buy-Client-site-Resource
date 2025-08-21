@@ -13,6 +13,8 @@ import DashboardLayout from "../main/DashboardLayout";
 import PrivateRoute from "./PrivateRoute";
 import AllUsers from "../Daashboard/AllUsers";
 import AdminPrivateRoute from "./AdminPrivateRoute";
+import AdminHome from "../Daashboard/AdminHome";
+import UserHome from "../Daashboard/UserHome";
 
 const router = createBrowserRouter([
   {
@@ -57,15 +59,23 @@ const router = createBrowserRouter([
       </PrivateRoute>
     ),
     children: [
-      // only user routes _______________ Users   ________________/
+      // only user routes _______________ Users  ________________/
       {
         path: "cart",
         element: <Cart />,
+      },
+      {
+        path: "userHome",
+        element: <UserHome />,
       },
       // only Admin route ___________________ Admin _____________________/
       {
         path: "allUsers",
         element: <AdminPrivateRoute><AllUsers /></AdminPrivateRoute>
+      },
+      {
+        path: "adminHome",
+        element: <AdminPrivateRoute><AdminHome /></AdminPrivateRoute>
       },
 
 

@@ -8,7 +8,7 @@ const AdminPrivateRoute = ({children}) => {
   const [isAdmin, isLoading] = useAdmin();
   const location = useLocation()
 
-  if(loading && isLoading){
+  if(loading || isLoading){
     return <p>Loadinggggggg.......</p>
   }
 

@@ -3,10 +3,12 @@ import { Link, NavLink } from "react-router-dom";
 import useAuth from "../hook/useAuth";
 import { FaShoppingCart } from "react-icons/fa";
 import useCart from "../hook/useCart";
+import useAdmin from "../hook/useAdmin";
 
 const Navber = () => {
   const { user, logOut } = useAuth();
   const [cart] = useCart();
+  const [isAdmin] = useAdmin();
 
   const navOptions = (
     <>
@@ -37,26 +39,46 @@ const Navber = () => {
             isActive ? "text-yellow-500 font-bold" : "text-white"
           }
         >
-          Order
+          Order Product
         </NavLink>
       </li>
-      <li>
+      {
+        user && isAdmin && <li>
         <NavLink
-          to="/dashboard"
+          to="/dashboard/adminHome"
           className={({ isActive }) =>
-            isActive ? "text-yellow-500 font-bold" : "text-white"
+            isActive
+              ? "text-yellow-400 font-bold underline"
+              : "hover:text-yellow-300"
           }
         >
           Dashboard
         </NavLink>
       </li>
+      }
+      {
+        user && !isAdmin && <li>
+        <NavLink
+          to="/dashboard/userHome"
+          className={({ isActive }) =>
+            isActive
+              ? "text-yellow-400 font-bold underline"
+              : "hover:text-yellow-300"
+          }
+        >
+          Dashboard
+        </NavLink>
+      </li>
+      }
 
       {/* Shopping Cart */}
       <li>
         <NavLink
           to="/dashboard/cart"
           className={({ isActive }) =>
-            isActive ? "relative text-yellow-500 font-bold" : "relative text-white"
+            isActive
+              ? "relative text-yellow-500 font-bold"
+              : "relative text-white"
           }
         >
           <FaShoppingCart className="text-lg" />
@@ -96,7 +118,12 @@ const Navber = () => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
               </svg>
             </div>
             <ul
