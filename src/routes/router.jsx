@@ -12,6 +12,7 @@ import Order from "../pages/Category/Order";
 import DashboardLayout from "../main/DashboardLayout";
 import PrivateRoute from "./PrivateRoute";
 import AllUsers from "../Daashboard/AllUsers";
+import AdminPrivateRoute from "./AdminPrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -64,7 +65,7 @@ const router = createBrowserRouter([
       // only Admin route ___________________ Admin _____________________/
       {
         path: "allUsers",
-        element: <AllUsers />
+        element: <AdminPrivateRoute><AllUsers /></AdminPrivateRoute>
       },
 
 
