@@ -60,8 +60,8 @@ const ProductCard = ({ item }) => {
 
   return (
     <div className="card bg-base-100 shadow-xl">
-      <figure className="px-10 pt-10">
-        <img src={image} alt={name} className="rounded-xl" />
+      <figure className="">
+        <img  src={image} alt={name} className="rounded-xl w-full h-96" />
       </figure>
       <div className="card-body items-center text-center">
         <h2 className="card-title">{name}</h2>

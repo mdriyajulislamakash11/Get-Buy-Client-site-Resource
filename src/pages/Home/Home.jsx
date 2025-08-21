@@ -13,7 +13,9 @@ const Home = () => {
             {/* Banner */}
             <Banner />
             <PopularCategory />
-            <PickNShop />
+            <div className="my-20">
+                <PickNShop />
+            </div>
             <PopularProduct />
             <ShoudTry />
             <FutureProduct />

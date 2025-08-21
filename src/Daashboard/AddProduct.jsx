@@ -2,13 +2,51 @@ import React from "react";
 import { FaUtensils } from "react-icons/fa";
 import SectionlTitle from "../pages/Share/SectionTitle";
 import { useForm } from "react-hook-form";
+import useAxiosPublic from "../hook/useAxiosPublic";
+import useAxiosSecure from "../hook/useAxiosSecure";
+import Swal from "sweetalert2";
+
+const image_hosting_key = import.meta.env.VITE_IMAGEBB_TOKEN;
+const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
 
 const AddProduct = () => {
-    
+  const axiosPublic = useAxiosPublic();
+  const axiosSecure = useAxiosSecure();
+
   const { register, handleSubmit } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    // Upload to imgBB and then an url:
+
+    const imageFile = { image: data.image[0] };
+    const res = await axiosPublic.post(image_hosting_api, imageFile, {
+      headers: {
+        "content-type": "multipart/form-data",
+      },
+    });
+
+    console.log(res.data)
+
+    if (res.data.success) {
+      const productItem = {
+        name: data.name,
+        category: data.category,
+        price: data.price,
+        description: data.description,
+        image: res.data.data.display_url,
+      };
+
+      const result = await axiosSecure.post("/products", productItem);
+
+      if (result.data.insertedId) {
+        Swal.fire({
+          title: "Success!",
+          text: "Product added successfully",
+          icon: "success",
+          confirmButtonText: "OK",
+        });
+      }
+    }
   };
 
   return (
@@ -52,13 +90,15 @@ const AddProduct = () => {
                 <option value="Popular">Popular</option>
                 <option value="Fashion & Apparel">Fashion & Apparel</option>
                 <option value="Home & Kitchen">Home & Kitchen</option>
-                <option value="Beauty & Personal Care">"Beauty & Personal Care"</option>
-                <option value= "Sports & Outdoors"> "Sports & Outdoors"</option>
-                <option value="Books & Stationery">"Books & Stationery"</option>
-                <option value="Toys & Games">"Toys & Games"</option>
-                <option value= "Health & Wellness"> "Health & Wellness"</option>
-                <option value="Automotive">"Automotive"</option>
-                <option value="Groceries">"Groceries"</option>
+                <option value="Beauty & Personal Care">
+                  Beauty & Personal Care
+                </option>
+                <option value="Sports & Outdoors"> Sports & Outdoors</option>
+                <option value="Books & Stationery">Books & Stationery</option>
+                <option value="Toys & Games">Toys & Games</option>
+                <option value="Health & Wellness"> Health & Wellness</option>
+                <option value="Automotive">Automotive</option>
+                <option value="Groceries">Groceries</option>
               </select>
             </div>
 
