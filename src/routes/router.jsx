@@ -15,6 +15,7 @@ import AllUsers from "../Daashboard/AllUsers";
 import AdminPrivateRoute from "./AdminPrivateRoute";
 import AdminHome from "../Daashboard/AdminHome";
 import UserHome from "../Daashboard/UserHome";
+import AddProduct from "../Daashboard/AddProduct";
 
 const router = createBrowserRouter([
   {
@@ -76,6 +77,10 @@ const router = createBrowserRouter([
       {
         path: "adminHome",
         element: <AdminPrivateRoute><AdminHome /></AdminPrivateRoute>
+      },
+      {
+        path: "addProduct",
+        element: <AdminPrivateRoute><AddProduct /></AdminPrivateRoute>
       },
 
 

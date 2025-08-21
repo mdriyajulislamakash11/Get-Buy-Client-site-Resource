@@ -45,7 +45,7 @@ const DashboardLayout = () => {
               </li>
               <li>
                 <NavLink
-                  to="/dashboard/addItems"
+                  to="/dashboard/addProduct"
                   className={({ isActive }) =>
                     isActive
                       ? " text-start bg-blue-600  text-white font-bold border-none"
@@ -53,7 +53,7 @@ const DashboardLayout = () => {
                   }
                 >
                   <FaUtensils />
-                  Add Items
+                  Add Product
                 </NavLink>
               </li>
               <li>
