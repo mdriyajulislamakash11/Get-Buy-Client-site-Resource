@@ -1,16 +1,13 @@
 import React from "react";
 import useAxiosSecure from "../hook/useAxiosSecure";
 import { useQuery } from "@tanstack/react-query";
-import { FaTrashAlt, FaUser, FaUserAlt } from "react-icons/fa";
+import { FaTrashAlt, FaUserAlt } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 const AllUsers = () => {
   const axiosSecure = useAxiosSecure();
 
-  const {
-    data: users = [],
-    isLoading,
-    isError,
-  } = useQuery({
+  const { data: users = [], refetch } = useQuery({
     queryKey: ["users"],
     queryFn: async () => {
       const res = await axiosSecure.get("/users");
@@ -18,9 +15,21 @@ const AllUsers = () => {
     },
   });
 
-  if (isLoading) return <p className="text-center">Loading...</p>;
-  if (isError)
-    return <p className="text-center text-red-500">Something went wrong!</p>;
+  const addToAdmin = (user) => {
+    axiosSecure.patch(`/users/admin/${user._id}`).then((res) => {
+      console.log(res.data);
+      if (res.data.modifiedCount > 0) {
+        refetch();
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: `${user.name} id an Admin Now..!`,
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
+    });
+  };
 
   return (
     <div className="p-6">
@@ -43,9 +52,16 @@ const AllUsers = () => {
                 <td className="p-2">{user.name || "N/A"}</td>
                 <td className="p-2">{user.email}</td>
                 <td className="p-2">
-                    <button className="btn text-orange-400 ">
-                        <FaUserAlt />
+                  {user.role === "admin" ? (
+                    "Admin"
+                  ) : (
+                    <button
+                      onClick={() => addToAdmin(user)}
+                      className="btn text-orange-400 "
+                    >
+                      <FaUserAlt />
                     </button>
+                  )}
                 </td>
                 <td className="p-2">
                   <button className="btn text-red-600 ">
