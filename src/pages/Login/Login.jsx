@@ -6,6 +6,7 @@ import {
   loadCaptchaEnginge,
   validateCaptcha,
 } from "react-simple-captcha";
+import SocialLogin from "../Share/SocialLogin";
 
 const Login = () => {
   const { logInUser, googleLogin } = useAuth();
@@ -32,18 +33,6 @@ const Login = () => {
       })
       .catch((error) => {
         console.error("❌ Login failed:", error.message);
-      });
-  };
-
-  // Google Login handler
-  const handleGoogleLogin = () => {
-    googleLogin()
-      .then((result) => {
-        console.log("✅ Google Login Success:", result.user);
-        navigate(from, { replace: true });
-      })
-      .catch((error) => {
-        console.error("❌ Google login failed:", error.message);
       });
   };
 
@@ -129,17 +118,7 @@ const Login = () => {
           <div className="divider">OR</div>
 
           {/* Google Login */}
-          <button
-            onClick={handleGoogleLogin}
-            className="btn btn-outline w-full mb-3"
-          >
-            <img
-              src="https://www.svgrepo.com/show/355037/google.svg"
-              alt="Google"
-              className="w-5 h-5 mr-2"
-            />
-            Continue with Google
-          </button>
+         <SocialLogin />
 
           {/* Redirect to Register */}
           <p className="text-center text-sm text-gray-600">

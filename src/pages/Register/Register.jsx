@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../hook/useAuth";
 import useAxiosPublic from "../../hook/useAxiosPublic";
 import Swal from "sweetalert2";
+import SocialLogin from "../Share/SocialLogin";
 
 const Register = () => {
   const { createUser, updateUserProfile, googleLogin } = useAuth();
@@ -17,18 +18,6 @@ const Register = () => {
     reset,
     formState: { errors },
   } = useForm();
-
-  // Google Login handler
-  const handleGoogleLogin = () => {
-    googleLogin()
-      .then((result) => {
-        console.log("✅ Google Login Success:", result.user);
-        navigate(from, { replace: true });
-      })
-      .catch((error) => {
-        console.error("❌ Google login failed:", error.message);
-      });
-  };
 
   const onSubmit = (data) => {
     createUser(data.email, data.password)
@@ -59,22 +48,22 @@ const Register = () => {
             });
           })
           .catch((error) => {
-            console.error("Profile update error:", error);
+            console.error("Signup error:", error);
             Swal.fire({
               icon: "error",
-              title: "Profile Update Failed",
-              text:
-                error.message ||
-                "Something went wrong while updating your profile.",
+              title: "Signup Failed",
+              text: error.message || "Please try again later.",
             });
           });
       })
       .catch((error) => {
-        console.error("Signup error:", error);
+        console.error("Profile update error:", error);
         Swal.fire({
           icon: "error",
-          title: "Signup Failed",
-          text: error.message || "Please try again later.",
+          title: "Profile Update Failed",
+          text:
+            error.message ||
+            "Something went wrong while updating your profile.",
         });
       });
   };
@@ -153,17 +142,7 @@ const Register = () => {
           <div className="divider">OR</div>
 
           {/* Google Login */}
-          <button
-            onClick={handleGoogleLogin}
-            className="btn btn-outline w-full mb-3"
-          >
-            <img
-              src="https://www.svgrepo.com/show/355037/google.svg"
-              alt="Google"
-              className="w-5 h-5 mr-2"
-            />
-            Continue with Google
-          </button>
+          <SocialLogin />
 
           {/* Redirect to Register */}
           <p className="text-center text-sm text-gray-600">

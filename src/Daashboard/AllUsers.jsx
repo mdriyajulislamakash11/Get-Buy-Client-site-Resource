@@ -15,6 +15,7 @@ const AllUsers = () => {
     },
   });
 
+  // addmin role create
   const addToAdmin = (user) => {
     axiosSecure.patch(`/users/admin/${user._id}`).then((res) => {
       console.log(res.data);
@@ -30,6 +31,26 @@ const AllUsers = () => {
       }
     });
   };
+
+  // addmin delete: 
+  const hadleAdminDelete = (user) => {
+    axiosSecure.delete(`/users/${user._id}`)
+    .then(res => {
+        console.log(res.data) 
+
+        //validation: 
+        if(res.data.deletedCount > 0){
+             refetch();
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: `${user.name} Deleted Now..!`,
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        }
+    })
+  }
 
   return (
     <div className="p-6">
@@ -64,7 +85,7 @@ const AllUsers = () => {
                   )}
                 </td>
                 <td className="p-2">
-                  <button className="btn text-red-600 ">
+                  <button onClick={ () => hadleAdminDelete(user)} className="btn text-red-600 ">
                     <FaTrashAlt />{" "}
                   </button>
                 </td>
