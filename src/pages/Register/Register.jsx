@@ -5,7 +5,7 @@ import useAxiosPublic from "../../hook/useAxiosPublic";
 import Swal from "sweetalert2";
 
 const Register = () => {
-  const { createUser, updateUserProfile, googleLogin  } = useAuth();
+  const { createUser, updateUserProfile, googleLogin } = useAuth();
   const axiosPublic = useAxiosPublic();
   const navigate = useNavigate();
   const location = useLocation();
@@ -23,6 +23,7 @@ const Register = () => {
     googleLogin()
       .then((result) => {
         console.log("✅ Google Login Success:", result.user);
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         console.error("❌ Google login failed:", error.message);
@@ -30,43 +31,43 @@ const Register = () => {
   };
 
   const onSubmit = (data) => {
-
     createUser(data.email, data.password)
       .then((result) => {
         console.log(result.user);
 
-        updateUserProfile(data.name, data.photoURL).then(() => {
-          // create user entry in the database
-          const userInfo = {
-            name: data.name,
-            email: data.email,
-          };
+        updateUserProfile(data.name, data.photoURL)
+          .then(() => {
+            // create user entry in the database
+            const userInfo = {
+              name: data.name,
+              email: data.email,
+            };
 
-          axiosPublic.post("/users", userInfo).then((res) => {
-            if (res.data.insertedId) {
-              console.log("user addede to the database");
-              reset();
-              Swal.fire({
-                icon: "success",
-                title: "Signup Successful!",
-                text: `Welcome, ${data.name}!`,
-                timer: 2000,
-                showConfirmButton: false,
-              });
+            axiosPublic.post("/users", userInfo).then((res) => {
+              if (res.data.insertedId) {
+                console.log("user addede to the database");
+                reset();
+                Swal.fire({
+                  icon: "success",
+                  title: "Signup Successful!",
+                  text: `Welcome, ${data.name}!`,
+                  timer: 2000,
+                  showConfirmButton: false,
+                });
+              }
               navigate(from, { replace: true });
-            }
+            });
+          })
+          .catch((error) => {
+            console.error("Profile update error:", error);
+            Swal.fire({
+              icon: "error",
+              title: "Profile Update Failed",
+              text:
+                error.message ||
+                "Something went wrong while updating your profile.",
+            });
           });
-        });
-      })
-      .catch((error) => {
-        console.error("Profile update error:", error);
-        Swal.fire({
-          icon: "error",
-          title: "Profile Update Failed",
-          text:
-            error.message ||
-            "Something went wrong while updating your profile.",
-        });
       })
       .catch((error) => {
         console.error("Signup error:", error);
