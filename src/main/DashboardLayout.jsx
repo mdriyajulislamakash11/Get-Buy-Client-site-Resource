@@ -18,7 +18,7 @@ const DashboardLayout = () => {
   const [cart] = useCart();
 
   // TODO: get isAdmin value grom the database
-  const isAdmin = false
+  const isAdmin = true
 
   return (
     <div className="flex">

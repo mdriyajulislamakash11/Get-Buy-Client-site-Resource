@@ -1,10 +1,10 @@
-import React from "react";
 import useAxiosSecure from "../hook/useAxiosSecure";
 import { useQuery } from "@tanstack/react-query";
 import { FaTrashAlt, FaUserAlt } from "react-icons/fa";
 import Swal from "sweetalert2";
 
 const AllUsers = () => {
+    
   const axiosSecure = useAxiosSecure();
 
   const { data: users = [], refetch } = useQuery({
