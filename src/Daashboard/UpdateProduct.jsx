@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAxiosSecure from "../hook/useAxiosSecure";
 import Swal from "sweetalert2";
-import { FaUtensils } from "react-icons/fa";
+import { FaEdit } from "react-icons/fa";
 import SectionlTitle from "../pages/Share/SectionTitle";
 import useAxiosPublic from "../hook/useAxiosPublic";
 
@@ -153,7 +153,7 @@ const UpdateProduct = () => {
           </div>
 
           <button type="submit" className="btn">
-            Add Items <FaUtensils className="ml-4" />
+            Update Product <FaEdit className="ml-4" />
           </button>
         </form>
       </div>

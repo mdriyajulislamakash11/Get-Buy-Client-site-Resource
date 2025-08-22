@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../hook/useAuth";
 import useAxiosSecure from "../../hook/useAxiosSecure";
 import Swal from "sweetalert2";
+import useCart from "../../hook/useCart";
 
 const ProductCard = ({ item }) => {
   const { name, description, image, price, _id } = item;
@@ -10,6 +11,7 @@ const ProductCard = ({ item }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const axiosSecure = useAxiosSecure();
+  const [,refetch] = useCart();
 
   const handleAddToCart = () => {
     if (user && user.email) {
@@ -26,6 +28,7 @@ const ProductCard = ({ item }) => {
       axiosSecure.post('/carts', productItem)
       .then(res => {
         if(res.data.insertedId){
+          refetch()
            Swal.fire({
             position: "top-end",
             icon: "success",
@@ -35,10 +38,6 @@ const ProductCard = ({ item }) => {
           });
         }
       })
-
-
-
-
     } else {
       Swal.fire({
         title: "You are not Logged In",

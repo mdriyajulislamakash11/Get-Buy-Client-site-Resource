@@ -18,6 +18,7 @@ import UserHome from "../Daashboard/UserHome";
 import AddProduct from "../Daashboard/AddProduct";
 import ManagementProduct from "../Daashboard/ManageMentProduct";
 import UpdateProduct from "../Daashboard/UpdateProduct";
+import Payment from "../Daashboard/Payment";
 
 
 const router = createBrowserRouter([
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
       {
         path: "userHome",
         element: <UserHome />,
+      },
+      {
+        path: "payment",
+        element: <Payment />,
       },
       // only Admin route ___________________ Admin _____________________/
       {
