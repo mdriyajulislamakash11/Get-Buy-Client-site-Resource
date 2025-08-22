@@ -19,6 +19,7 @@ import AddProduct from "../Daashboard/AddProduct";
 import ManagementProduct from "../Daashboard/ManageMentProduct";
 import UpdateProduct from "../Daashboard/UpdateProduct";
 import Payment from "../Daashboard/Payment";
+import PaymentHistory from "../Daashboard/PaymentHistory";
 
 
 const router = createBrowserRouter([
@@ -76,6 +77,10 @@ const router = createBrowserRouter([
       {
         path: "payment",
         element: <Payment />,
+      },
+      {
+        path: "paymentHistory",
+        element: <PaymentHistory />,
       },
       // only Admin route ___________________ Admin _____________________/
       {
