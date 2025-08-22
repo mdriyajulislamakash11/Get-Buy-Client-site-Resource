@@ -16,6 +16,9 @@ import AdminPrivateRoute from "./AdminPrivateRoute";
 import AdminHome from "../Daashboard/AdminHome";
 import UserHome from "../Daashboard/UserHome";
 import AddProduct from "../Daashboard/AddProduct";
+import ManagementProduct from "../Daashboard/ManageMentProduct";
+import UpdateProduct from "../Daashboard/UpdateProduct";
+
 
 const router = createBrowserRouter([
   {
@@ -81,6 +84,15 @@ const router = createBrowserRouter([
       {
         path: "addProduct",
         element: <AdminPrivateRoute><AddProduct /></AdminPrivateRoute>
+      },
+      {
+        path: "manageProducts",
+        element: <AdminPrivateRoute><ManagementProduct /></AdminPrivateRoute>
+      },
+      {
+        path: "updateProduct/:id",
+        element: <AdminPrivateRoute><UpdateProduct /></AdminPrivateRoute>,
+        loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
       },
 
 

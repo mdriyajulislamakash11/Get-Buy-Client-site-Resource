@@ -58,7 +58,7 @@ const DashboardLayout = () => {
               </li>
               <li>
                 <NavLink
-                  to="/dashboard/manageItems"
+                  to="/dashboard/manageProducts"
                   className={({ isActive }) =>
                     isActive
                       ? " text-start bg-blue-600 text-white font-bold border-none"
@@ -66,7 +66,7 @@ const DashboardLayout = () => {
                   }
                 >
                   <FaList />
-                  Manage Items
+                  Manage Product
                 </NavLink>
               </li>
               <li>
