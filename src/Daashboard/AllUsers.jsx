@@ -1,6 +1,6 @@
 import useAxiosSecure from "../hook/useAxiosSecure";
 import { useQuery } from "@tanstack/react-query";
-import { FaTrashAlt, FaUserAlt } from "react-icons/fa";
+import { FaTrashAlt, FaUsers } from "react-icons/fa";
 import Swal from "sweetalert2";
 
 const AllUsers = () => {
@@ -14,6 +14,7 @@ const AllUsers = () => {
       return res.data;
     },
   });
+  
 
   // addmin role create
   const addToAdmin = (user) => {
@@ -80,7 +81,7 @@ const AllUsers = () => {
                       onClick={() => addToAdmin(user)}
                       className="btn text-orange-400 "
                     >
-                      <FaUserAlt />
+                      <FaUsers />
                     </button>
                   )}
                 </td>
