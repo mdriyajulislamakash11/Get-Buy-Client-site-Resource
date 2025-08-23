@@ -102,7 +102,7 @@ const router = createBrowserRouter([
       {
         path: "updateProduct/:id",
         element: <AdminPrivateRoute><UpdateProduct /></AdminPrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+        loader: ({params}) => fetch(`https://get-buy-server.vercel.app/products/${params.id}`)
       },
 
 
